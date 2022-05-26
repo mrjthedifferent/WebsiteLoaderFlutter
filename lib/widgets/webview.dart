@@ -41,7 +41,7 @@ class _WebViewAppState extends State<WebViewApp> {
           Utils.snackBar(context, 'Invalid URL');
           return NavigationDecision.prevent;
         }
-        if (request.url.startsWith(Const.kWebUrl)) {
+        if (request.url.startsWith(kWebUrl)) {
           return NavigationDecision.navigate;
         }
         return NavigationDecision.prevent;
